@@ -1,0 +1,17 @@
+{
+ "doctype": "Page",
+ "name": "sponsorship-transfers",
+ "module": "KSA Government Relations",
+ "page_name": "sponsorship-transfers",
+ "title": "Sponsorship Transfers",
+ "icon": "octicon octicon-sync",
+ "standard": "Yes",
+ "system_page": 0,
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Government Relations Manager"},
+  {"role": "Government Relations Officer"},
+  {"role": "Finance Clearance Officer"},
+  {"role": "HR Government Viewer"}
+ ]
+}

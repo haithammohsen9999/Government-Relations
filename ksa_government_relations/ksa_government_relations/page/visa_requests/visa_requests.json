@@ -1,0 +1,17 @@
+{
+ "doctype": "Page",
+ "name": "visa-requests",
+ "module": "KSA Government Relations",
+ "page_name": "visa-requests",
+ "title": "Visa Requests",
+ "icon": "octicon octicon-id-badge",
+ "standard": "Yes",
+ "system_page": 0,
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Government Relations Manager"},
+  {"role": "Government Relations Officer"},
+  {"role": "Finance Clearance Officer"},
+  {"role": "HR Government Viewer"}
+ ]
+}

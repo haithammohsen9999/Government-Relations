@@ -1,0 +1,30 @@
+{
+ "doctype": "DocType",
+ "name": "Saudi Airport",
+ "module": "KSA Government Relations",
+ "autoname": "field:airport_code",
+ "title_field": "airport_name",
+ "search_fields": "airport_code,airport_name,city",
+ "track_changes": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "airport_code",
+  "airport_name",
+  "city",
+  "active"
+ ],
+ "fields": [
+  {"fieldname": "airport_code", "fieldtype": "Data", "label": "Airport Code", "reqd": 1, "unique": 1, "in_list_view": 1},
+  {"fieldname": "airport_name", "fieldtype": "Data", "label": "Airport Name", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "city", "fieldtype": "Data", "label": "City", "in_list_view": 1},
+  {"fieldname": "active", "fieldtype": "Check", "label": "Active", "default": "1", "in_list_view": 1}
+ ],
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "print": 1, "export": 1},
+  {"role": "Government Relations Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "print": 1, "export": 1},
+  {"role": "Government Relations Officer", "read": 1, "write": 1, "create": 1, "print": 1, "export": 1},
+  {"role": "HR Government Viewer", "read": 1, "print": 1, "export": 1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

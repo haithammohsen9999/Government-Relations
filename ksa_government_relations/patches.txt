@@ -1,0 +1,4 @@
+[pre_model_sync]
+
+[post_model_sync]
+ksa_government_relations.patches.v1_0.create_missing_government_profiles

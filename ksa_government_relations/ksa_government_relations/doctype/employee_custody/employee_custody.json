@@ -1,0 +1,48 @@
+{
+ "doctype": "DocType",
+ "name": "Employee Custody",
+ "module": "KSA Government Relations",
+ "track_changes": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "custody_type",
+  "asset",
+  "item_code",
+  "description",
+  "issue_date",
+  "expected_return_date",
+  "return_date",
+  "status",
+  "estimated_value",
+  "amount_due",
+  "attachment",
+  "notes"
+ ],
+ "fields": [
+  {"fieldname": "employee", "fieldtype": "Link", "label": "Employee", "options": "Employee", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "employee_name", "fieldtype": "Data", "label": "Employee Name", "read_only": 1},
+  {"fieldname": "custody_type", "fieldtype": "Select", "label": "Custody Type", "options": "Asset\nCash\nLaptop\nMobile\nSIM Card\nVehicle\nUniform\nKeys\nAccess Card\nTools\nOther", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "asset", "fieldtype": "Link", "label": "Asset", "options": "Asset"},
+  {"fieldname": "item_code", "fieldtype": "Link", "label": "Item Code", "options": "Item"},
+  {"fieldname": "description", "fieldtype": "Small Text", "label": "Description"},
+  {"fieldname": "issue_date", "fieldtype": "Date", "label": "Issue Date"},
+  {"fieldname": "expected_return_date", "fieldtype": "Date", "label": "Expected Return Date"},
+  {"fieldname": "return_date", "fieldtype": "Date", "label": "Return Date"},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Issued\nReturned\nLost\nDamaged\nWritten Off", "default": "Issued", "in_list_view": 1},
+  {"fieldname": "estimated_value", "fieldtype": "Currency", "label": "Estimated Value"},
+  {"fieldname": "amount_due", "fieldtype": "Currency", "label": "Amount Due"},
+  {"fieldname": "attachment", "fieldtype": "Attach", "label": "Attachment"},
+  {"fieldname": "notes", "fieldtype": "Small Text", "label": "Notes"}
+ ],
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "print": 1, "export": 1},
+  {"role": "Government Relations Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "print": 1, "export": 1},
+  {"role": "Government Relations Officer", "read": 1, "write": 1, "create": 1, "print": 1, "export": 1},
+  {"role": "Asset Clearance Officer", "read": 1, "write": 1, "create": 1, "print": 1, "export": 1},
+  {"role": "HR Government Viewer", "read": 1, "print": 1, "export": 1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

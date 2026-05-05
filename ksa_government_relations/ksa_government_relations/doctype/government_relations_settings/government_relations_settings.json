@@ -1,0 +1,314 @@
+{
+ "doctype": "DocType",
+ "name": "Government Relations Settings",
+ "module": "KSA Government Relations",
+ "issingle": 1,
+ "track_changes": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_section",
+  "default_company",
+  "default_cost_center",
+  "default_currency",
+  "default_government_relations_user",
+  "default_finance_user",
+  "default_asset_user",
+  "auto_create_profile_on_employee_creation",
+  "outside_ksa_section",
+  "auto_create_visa_request",
+  "auto_create_clearance",
+  "auto_create_payment_request",
+  "auto_create_ticket_request",
+  "default_departure_after_leave_start_days",
+  "default_return_before_leave_end_days",
+  "block_if_passport_expired",
+  "block_if_iqama_expired",
+  "minimum_passport_validity_days_after_return",
+  "minimum_iqama_validity_days_after_return",
+  "return_delay_section",
+  "late_return_stage_1_days",
+  "late_return_stage_1_label_en",
+  "late_return_stage_1_label_ar",
+  "late_return_stage_2_days",
+  "late_return_stage_2_label_en",
+  "late_return_stage_2_label_ar",
+  "late_return_stage_3_days",
+  "late_return_stage_3_label_en",
+  "late_return_stage_3_label_ar",
+  "accounts_section",
+  "visa_expense_account",
+  "qiwa_balance_account",
+  "ticket_expense_account",
+  "sponsorship_transfer_expense_account",
+  "government_fees_payable_account",
+  "employee_receivable_account",
+  "default_payment_account",
+  "pricing_section",
+  "visa_pricing_rules",
+  "ticket_pricing_rules",
+  "sponsorship_transfer_pricing_rules"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_section",
+   "fieldtype": "Section Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "default_company",
+   "fieldtype": "Link",
+   "label": "Default Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "default_cost_center",
+   "fieldtype": "Link",
+   "label": "Default Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "default_currency",
+   "fieldtype": "Link",
+   "label": "Default Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "default_government_relations_user",
+   "fieldtype": "Link",
+   "label": "Default Government Relations User",
+   "options": "User"
+  },
+  {
+   "fieldname": "default_finance_user",
+   "fieldtype": "Link",
+   "label": "Default Finance User",
+   "options": "User"
+  },
+  {
+   "fieldname": "default_asset_user",
+   "fieldtype": "Link",
+   "label": "Default Asset User",
+   "options": "User"
+  },
+  {
+   "fieldname": "auto_create_profile_on_employee_creation",
+   "fieldtype": "Check",
+   "label": "Auto Create Profile On Employee Creation",
+   "default": "1"
+  },
+  {
+   "fieldname": "outside_ksa_section",
+   "fieldtype": "Section Break",
+   "label": "Outside KSA Leave"
+  },
+  {
+   "fieldname": "auto_create_visa_request",
+   "fieldtype": "Check",
+   "label": "Auto Create Visa Request",
+   "default": "1"
+  },
+  {
+   "fieldname": "auto_create_clearance",
+   "fieldtype": "Check",
+   "label": "Auto Create Clearance",
+   "default": "1"
+  },
+  {
+   "fieldname": "auto_create_payment_request",
+   "fieldtype": "Check",
+   "label": "Auto Create Payment Request",
+   "default": "1"
+  },
+  {
+   "fieldname": "auto_create_ticket_request",
+   "fieldtype": "Check",
+   "label": "Auto Create Ticket Request",
+   "default": "1"
+  },
+  {
+   "fieldname": "default_departure_after_leave_start_days",
+   "fieldtype": "Int",
+   "label": "Default Departure After Leave Start Days",
+   "default": "3"
+  },
+  {
+   "fieldname": "default_return_before_leave_end_days",
+   "fieldtype": "Int",
+   "label": "Default Return Before Leave End Days",
+   "default": "1"
+  },
+  {
+   "fieldname": "block_if_passport_expired",
+   "fieldtype": "Check",
+   "label": "Block If Passport Expired",
+   "default": "1"
+  },
+  {
+   "fieldname": "block_if_iqama_expired",
+   "fieldtype": "Check",
+   "label": "Block If Iqama Expired",
+   "default": "1"
+  },
+  {
+   "fieldname": "minimum_passport_validity_days_after_return",
+   "fieldtype": "Int",
+   "label": "Minimum Passport Validity Days After Return",
+   "default": "30"
+  },
+  {
+   "fieldname": "minimum_iqama_validity_days_after_return",
+   "fieldtype": "Int",
+   "label": "Minimum Iqama Validity Days After Return",
+   "default": "30"
+  },
+  {
+   "fieldname": "return_delay_section",
+   "fieldtype": "Section Break",
+   "label": "Return Delay Stages"
+  },
+  {
+   "fieldname": "late_return_stage_1_days",
+   "fieldtype": "Int",
+   "label": "Late Return Stage 1 Days",
+   "default": "2"
+  },
+  {
+   "fieldname": "late_return_stage_1_label_en",
+   "fieldtype": "Data",
+   "label": "Late Return Stage 1 Label EN",
+   "default": "Late Return"
+  },
+  {
+   "fieldname": "late_return_stage_1_label_ar",
+   "fieldtype": "Data",
+   "label": "Late Return Stage 1 Label AR",
+   "default": "متأخر عن العودة"
+  },
+  {
+   "fieldname": "late_return_stage_2_days",
+   "fieldtype": "Int",
+   "label": "Late Return Stage 2 Days",
+   "default": "60"
+  },
+  {
+   "fieldname": "late_return_stage_2_label_en",
+   "fieldtype": "Data",
+   "label": "Late Return Stage 2 Label EN",
+   "default": "Serious Delay"
+  },
+  {
+   "fieldname": "late_return_stage_2_label_ar",
+   "fieldtype": "Data",
+   "label": "Late Return Stage 2 Label AR",
+   "default": "تأخير جسيم"
+  },
+  {
+   "fieldname": "late_return_stage_3_days",
+   "fieldtype": "Int",
+   "label": "Late Return Stage 3 Days",
+   "default": "120"
+  },
+  {
+   "fieldname": "late_return_stage_3_label_en",
+   "fieldtype": "Data",
+   "label": "Late Return Stage 3 Label EN",
+   "default": "Refer to Investigation / Termination Review"
+  },
+  {
+   "fieldname": "late_return_stage_3_label_ar",
+   "fieldtype": "Data",
+   "label": "Late Return Stage 3 Label AR",
+   "default": "تحويل للتحقيق / النظر في الفصل"
+  },
+  {
+   "fieldname": "accounts_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting Accounts"
+  },
+  {
+   "fieldname": "visa_expense_account",
+   "fieldtype": "Link",
+   "label": "Visa Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "qiwa_balance_account",
+   "fieldtype": "Link",
+   "label": "Qiwa Balance Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "ticket_expense_account",
+   "fieldtype": "Link",
+   "label": "Ticket Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "sponsorship_transfer_expense_account",
+   "fieldtype": "Link",
+   "label": "Sponsorship Transfer Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "government_fees_payable_account",
+   "fieldtype": "Link",
+   "label": "Government Fees Payable Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "employee_receivable_account",
+   "fieldtype": "Link",
+   "label": "Employee Receivable Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_payment_account",
+   "fieldtype": "Link",
+   "label": "Default Payment Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "pricing_section",
+   "fieldtype": "Section Break",
+   "label": "Pricing"
+  },
+  {
+   "fieldname": "visa_pricing_rules",
+   "fieldtype": "Table",
+   "label": "Visa Pricing Rules",
+   "options": "Visa Pricing Rule"
+  },
+  {
+   "fieldname": "ticket_pricing_rules",
+   "fieldtype": "Table",
+   "label": "Ticket Pricing Rules",
+   "options": "Ticket Pricing Rule"
+  },
+  {
+   "fieldname": "sponsorship_transfer_pricing_rules",
+   "fieldtype": "Table",
+   "label": "Sponsorship Transfer Pricing Rules",
+   "options": "Sponsorship Transfer Pricing Rule"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Government Relations Manager",
+   "read": 1,
+   "write": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

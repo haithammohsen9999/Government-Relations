@@ -1,0 +1,26 @@
+{
+ "doctype": "DocType",
+ "name": "Government Request Log",
+ "module": "KSA Government Relations",
+ "istable": 1,
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "action_type",
+  "status",
+  "done_by",
+  "done_by_name",
+  "action_datetime",
+  "comment",
+  "attachment"
+ ],
+ "fields": [
+  {"fieldname": "action_type", "fieldtype": "Data", "label": "Action Type", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "status", "fieldtype": "Data", "label": "Status", "in_list_view": 1},
+  {"fieldname": "done_by", "fieldtype": "Link", "label": "Done By", "options": "User"},
+  {"fieldname": "done_by_name", "fieldtype": "Data", "label": "Done By Name"},
+  {"fieldname": "action_datetime", "fieldtype": "Datetime", "label": "Action Datetime"},
+  {"fieldname": "comment", "fieldtype": "Small Text", "label": "Comment"},
+  {"fieldname": "attachment", "fieldtype": "Attach", "label": "Attachment"}
+ ]
+}

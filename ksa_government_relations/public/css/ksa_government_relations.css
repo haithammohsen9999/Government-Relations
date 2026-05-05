@@ -1,0 +1,116 @@
+.ksa-gr-shell {
+	padding: 1rem;
+}
+
+.ksa-gr-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.ksa-gr-card {
+	background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+	border: 1px solid #dbe4ea;
+	border-radius: 18px;
+	padding: 1rem 1.1rem;
+	box-shadow: 0 12px 32px rgba(15, 23, 42, 0.05);
+}
+
+.ksa-gr-card h4,
+.ksa-gr-card h5 {
+	margin: 0 0 0.4rem;
+	font-weight: 700;
+}
+
+.ksa-gr-kpi {
+	font-size: 2rem;
+	font-weight: 800;
+	color: #0f172a;
+	line-height: 1;
+}
+
+.ksa-gr-subtle {
+	color: #5f6c7b;
+	font-size: 0.88rem;
+}
+
+.ksa-gr-pill {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.22rem 0.7rem;
+	border-radius: 999px;
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.ksa-gr-pill.blue {
+	background: #e0f2fe;
+	color: #075985;
+}
+
+.ksa-gr-pill.green {
+	background: #dcfce7;
+	color: #166534;
+}
+
+.ksa-gr-pill.orange {
+	background: #ffedd5;
+	color: #9a3412;
+}
+
+.ksa-gr-pill.red {
+	background: #fee2e2;
+	color: #991b1b;
+}
+
+.ksa-gr-pill.gray {
+	background: #e5e7eb;
+	color: #374151;
+}
+
+.ksa-gr-panel {
+	background: #fff;
+	border: 1px solid #dbe4ea;
+	border-radius: 18px;
+	padding: 1rem;
+	box-shadow: 0 12px 28px rgba(15, 23, 42, 0.04);
+}
+
+.ksa-gr-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.ksa-gr-table th,
+.ksa-gr-table td {
+	padding: 0.65rem 0.75rem;
+	border-bottom: 1px solid #edf2f7;
+	text-align: start;
+	vertical-align: top;
+}
+
+.ksa-gr-table th {
+	font-size: 0.82rem;
+	color: #64748b;
+	font-weight: 700;
+	background: #f8fafc;
+}
+
+.ksa-gr-empty {
+	padding: 1rem;
+	color: #64748b;
+	text-align: center;
+}
+
+.ksa-gr-split {
+	display: grid;
+	grid-template-columns: 1.1fr 0.9fr;
+	gap: 1rem;
+}
+
+@media (max-width: 960px) {
+	.ksa-gr-split {
+		grid-template-columns: 1fr;
+	}
+}

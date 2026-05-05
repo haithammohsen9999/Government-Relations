@@ -1,0 +1,19 @@
+{
+ "doctype": "Page",
+ "name": "employee-travel-profile",
+ "module": "KSA Government Relations",
+ "page_name": "employee-travel-profile",
+ "title": "Employee Travel Profile",
+ "icon": "octicon octicon-person",
+ "standard": "Yes",
+ "system_page": 0,
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Government Relations Manager"},
+  {"role": "Government Relations Officer"},
+  {"role": "Finance Clearance Officer"},
+  {"role": "Asset Clearance Officer"},
+  {"role": "HR Government Viewer"},
+  {"role": "Employee Self Service Government"}
+ ]
+}

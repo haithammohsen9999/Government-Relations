@@ -1,0 +1,17 @@
+{
+ "doctype": "Report",
+ "name": "Outside KSA Leave Workflow Report",
+ "module": "KSA Government Relations",
+ "ref_doctype": "Leave Application",
+ "report_name": "Outside KSA Leave Workflow Report",
+ "report_type": "Script Report",
+ "is_standard": "Yes",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Government Relations Manager"},
+  {"role": "Government Relations Officer"},
+  {"role": "Finance Clearance Officer"},
+  {"role": "Asset Clearance Officer"},
+  {"role": "HR Government Viewer"}
+ ]
+}

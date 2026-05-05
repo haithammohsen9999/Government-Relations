@@ -1,0 +1,18 @@
+{
+ "doctype": "Page",
+ "name": "clearance-center",
+ "module": "KSA Government Relations",
+ "page_name": "clearance-center",
+ "title": "Clearance Center",
+ "icon": "octicon octicon-checklist",
+ "standard": "Yes",
+ "system_page": 0,
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Government Relations Manager"},
+  {"role": "Government Relations Officer"},
+  {"role": "Finance Clearance Officer"},
+  {"role": "Asset Clearance Officer"},
+  {"role": "HR Government Viewer"}
+ ]
+}

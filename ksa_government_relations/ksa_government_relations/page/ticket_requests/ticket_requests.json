@@ -1,0 +1,17 @@
+{
+ "doctype": "Page",
+ "name": "ticket-requests",
+ "module": "KSA Government Relations",
+ "page_name": "ticket-requests",
+ "title": "Ticket Requests",
+ "icon": "octicon octicon-airplane",
+ "standard": "Yes",
+ "system_page": 0,
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Government Relations Manager"},
+  {"role": "Government Relations Officer"},
+  {"role": "Finance Clearance Officer"},
+  {"role": "HR Government Viewer"}
+ ]
+}

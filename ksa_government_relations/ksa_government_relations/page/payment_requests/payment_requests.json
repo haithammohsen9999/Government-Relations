@@ -1,0 +1,17 @@
+{
+ "doctype": "Page",
+ "name": "payment-requests",
+ "module": "KSA Government Relations",
+ "page_name": "payment-requests",
+ "title": "Payment Requests",
+ "icon": "octicon octicon-credit-card",
+ "standard": "Yes",
+ "system_page": 0,
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Government Relations Manager"},
+  {"role": "Government Relations Officer"},
+  {"role": "Finance Clearance Officer"},
+  {"role": "HR Government Viewer"}
+ ]
+}

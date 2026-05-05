@@ -1,0 +1,18 @@
+{
+ "doctype": "Page",
+ "name": "government-relations",
+ "module": "KSA Government Relations",
+ "page_name": "government-relations",
+ "title": "Government Relations",
+ "icon": "octicon octicon-dashboard",
+ "standard": "Yes",
+ "system_page": 0,
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Government Relations Manager"},
+  {"role": "Government Relations Officer"},
+  {"role": "Finance Clearance Officer"},
+  {"role": "Asset Clearance Officer"},
+  {"role": "HR Government Viewer"}
+ ]
+}

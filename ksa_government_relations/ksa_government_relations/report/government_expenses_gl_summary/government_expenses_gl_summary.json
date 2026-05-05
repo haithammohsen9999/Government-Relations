@@ -1,0 +1,14 @@
+{
+ "doctype": "Report",
+ "name": "Government Expenses GL Summary",
+ "module": "KSA Government Relations",
+ "ref_doctype": "Government Payment Request",
+ "report_name": "Government Expenses GL Summary",
+ "report_type": "Script Report",
+ "is_standard": "Yes",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Government Relations Manager"},
+  {"role": "Finance Clearance Officer"}
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "doctype": "DocType",
+ "name": "Sponsorship Transfer Request",
+ "module": "KSA Government Relations",
+ "track_changes": 1,
+ "is_submittable": 1,
+ "autoname": "format:STR-{YYYY}-{#####}",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "transfer_direction",
+  "nationality",
+  "current_sponsor",
+  "new_sponsor",
+  "iqama_number",
+  "qiwa_request_no",
+  "status",
+  "amount",
+  "account",
+  "payment_request",
+  "clearance",
+  "notes"
+ ],
+ "fields": [
+  {"fieldname": "employee", "fieldtype": "Link", "label": "Employee", "options": "Employee", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "employee_name", "fieldtype": "Data", "label": "Employee Name", "read_only": 1},
+  {"fieldname": "transfer_direction", "fieldtype": "Select", "label": "Transfer Direction", "options": "Into Company\nOut of Company\nBetween Companies", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "nationality", "fieldtype": "Link", "label": "Nationality", "options": "Country"},
+  {"fieldname": "current_sponsor", "fieldtype": "Data", "label": "Current Sponsor"},
+  {"fieldname": "new_sponsor", "fieldtype": "Data", "label": "New Sponsor"},
+  {"fieldname": "iqama_number", "fieldtype": "Data", "label": "Iqama Number"},
+  {"fieldname": "qiwa_request_no", "fieldtype": "Data", "label": "Qiwa Request No", "allow_on_submit": 1},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Draft\nSent to Qiwa\nApproved\nWaiting Payment\nCompleted\nRejected\nCancelled", "default": "Draft", "allow_on_submit": 1, "in_list_view": 1},
+  {"fieldname": "amount", "fieldtype": "Currency", "label": "Amount"},
+  {"fieldname": "account", "fieldtype": "Link", "label": "Account", "options": "Account"},
+  {"fieldname": "payment_request", "fieldtype": "Link", "label": "Payment Request", "options": "Government Payment Request", "allow_on_submit": 1},
+  {"fieldname": "clearance", "fieldtype": "Link", "label": "Clearance", "options": "Employee Clearance", "allow_on_submit": 1},
+  {"fieldname": "notes", "fieldtype": "Small Text", "label": "Notes"}
+ ],
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 1, "cancel": 1, "print": 1, "export": 1},
+  {"role": "Government Relations Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 1, "cancel": 1, "print": 1, "export": 1},
+  {"role": "Government Relations Officer", "read": 1, "write": 1, "create": 1, "submit": 1, "print": 1, "export": 1},
+  {"role": "Finance Clearance Officer", "read": 1, "write": 1, "print": 1, "export": 1},
+  {"role": "HR Government Viewer", "read": 1, "print": 1, "export": 1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

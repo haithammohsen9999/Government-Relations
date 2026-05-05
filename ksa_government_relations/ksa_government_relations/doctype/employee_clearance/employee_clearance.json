@@ -1,0 +1,48 @@
+{
+ "doctype": "DocType",
+ "name": "Employee Clearance",
+ "module": "KSA Government Relations",
+ "track_changes": 1,
+ "is_submittable": 1,
+ "autoname": "format:CLR-{YYYY}-{#####}",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "clearance_type",
+  "leave_application",
+  "government_request",
+  "status",
+  "total_financial_liability",
+  "total_asset_liability",
+  "total_leave_settlement",
+  "total_liability",
+  "notes",
+  "clearance_items"
+ ],
+ "fields": [
+  {"fieldname": "employee", "fieldtype": "Link", "label": "Employee", "options": "Employee", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "employee_name", "fieldtype": "Data", "label": "Employee Name", "read_only": 1, "in_list_view": 1},
+  {"fieldname": "clearance_type", "fieldtype": "Select", "label": "Clearance Type", "options": "Temporary Travel Clearance\nFinal Exit Clearance\nSponsorship Transfer Clearance\nEnd of Service Clearance", "reqd": 1},
+  {"fieldname": "leave_application", "fieldtype": "Link", "label": "Leave Application", "options": "Leave Application"},
+  {"fieldname": "government_request", "fieldtype": "Link", "label": "Government Request", "options": "Government Request"},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Draft\nPending Finance Clearance\nPending Asset Clearance\nPending HR Clearance\nPending Government Clearance\nCleared\nRejected\nCancelled", "default": "Draft", "allow_on_submit": 1, "in_list_view": 1},
+  {"fieldname": "total_financial_liability", "fieldtype": "Currency", "label": "Total Financial Liability", "read_only": 1},
+  {"fieldname": "total_asset_liability", "fieldtype": "Currency", "label": "Total Asset Liability", "read_only": 1},
+  {"fieldname": "total_leave_settlement", "fieldtype": "Currency", "label": "Total Leave Settlement", "read_only": 1},
+  {"fieldname": "total_liability", "fieldtype": "Currency", "label": "Total Liability", "read_only": 1},
+  {"fieldname": "notes", "fieldtype": "Small Text", "label": "Notes"},
+  {"fieldname": "clearance_items", "fieldtype": "Table", "label": "Clearance Items", "options": "Employee Clearance Item", "allow_on_submit": 1}
+ ],
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 1, "cancel": 1, "print": 1, "export": 1},
+  {"role": "Government Relations Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 1, "cancel": 1, "print": 1, "export": 1},
+  {"role": "Government Relations Officer", "read": 1, "write": 1, "create": 1, "submit": 1, "print": 1, "export": 1},
+  {"role": "Finance Clearance Officer", "read": 1, "write": 1, "print": 1, "export": 1},
+  {"role": "Asset Clearance Officer", "read": 1, "write": 1, "print": 1, "export": 1},
+  {"role": "HR Government Viewer", "read": 1, "print": 1, "export": 1},
+  {"role": "Employee Self Service Government", "read": 1, "print": 1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

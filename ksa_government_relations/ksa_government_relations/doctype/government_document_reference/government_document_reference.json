@@ -1,0 +1,22 @@
+{
+ "doctype": "DocType",
+ "name": "Government Document Reference",
+ "module": "KSA Government Relations",
+ "istable": 1,
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_type",
+  "attachment",
+  "uploaded_by",
+  "upload_datetime",
+  "notes"
+ ],
+ "fields": [
+  {"fieldname": "document_type", "fieldtype": "Select", "label": "Document Type", "options": "Passport\nIqama\nVisa\nQiwa Screenshot\nMuqeem PDF\nPayment Receipt\nContract\nLeave Approval\nClearance\nOther", "reqd": 1},
+  {"fieldname": "attachment", "fieldtype": "Attach", "label": "Attachment"},
+  {"fieldname": "uploaded_by", "fieldtype": "Link", "label": "Uploaded By", "options": "User"},
+  {"fieldname": "upload_datetime", "fieldtype": "Datetime", "label": "Upload Datetime"},
+  {"fieldname": "notes", "fieldtype": "Small Text", "label": "Notes"}
+ ]
+}

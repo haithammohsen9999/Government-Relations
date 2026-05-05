@@ -1,0 +1,18 @@
+{
+ "doctype": "Page",
+ "name": "outside-ksa-leave-center",
+ "module": "KSA Government Relations",
+ "page_name": "outside-ksa-leave-center",
+ "title": "Outside KSA Leave Center",
+ "icon": "octicon octicon-globe",
+ "standard": "Yes",
+ "system_page": 0,
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Government Relations Manager"},
+  {"role": "Government Relations Officer"},
+  {"role": "Finance Clearance Officer"},
+  {"role": "Asset Clearance Officer"},
+  {"role": "HR Government Viewer"}
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "doctype": "Workspace",
+ "name": "Government Relations",
+ "module": "KSA Government Relations",
+ "label": "العلاقات الحكومية",
+ "title": "العلاقات الحكومية",
+ "icon": "octicon octicon-briefcase",
+ "public": 1,
+ "content": "[{\"id\":\"hdr1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">لوحة العلاقات الحكومية الحديثة</span>\",\"col\":12}},{\"id\":\"sc1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"لوحة العلاقات الحكومية الحديثة\",\"col\":3}},{\"id\":\"sc2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"إجازات خارج السعودية\",\"col\":3}},{\"id\":\"sc3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"طلبات التأشيرات\",\"col\":3}},{\"id\":\"sc4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"طلبات السداد\",\"col\":3}},{\"id\":\"sc5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"طلبات التذاكر\",\"col\":3}},{\"id\":\"sc6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"مركز المخالصات\",\"col\":3}},{\"id\":\"sc7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"ملف سفر الموظف\",\"col\":3}},{\"id\":\"sc8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"الإعدادات والتسعير\",\"col\":3}},{\"id\":\"sc9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"نقل الكفالة\",\"col\":3}},{\"id\":\"sc10\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"الملفات الحكومية للموظفين\",\"col\":3}},{\"id\":\"sc11\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"الطلبات الحكومية\",\"col\":3}},{\"id\":\"sc12\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"التقارير\",\"col\":3}}]",
+ "shortcuts": [
+  {"label": "لوحة العلاقات الحكومية الحديثة", "type": "Page", "link_to": "government-relations-dashboard"},
+  {"label": "إجازات خارج السعودية", "type": "Page", "link_to": "outside-ksa-leaves"},
+  {"label": "طلبات التأشيرات", "type": "Page", "link_to": "visa-requests"},
+  {"label": "طلبات السداد", "type": "Page", "link_to": "payment-requests"},
+  {"label": "طلبات التذاكر", "type": "Page", "link_to": "ticket-requests"},
+  {"label": "مركز المخالصات", "type": "Page", "link_to": "clearance-center"},
+  {"label": "ملف سفر الموظف", "type": "Page", "link_to": "employee-travel-profile"},
+  {"label": "الإعدادات والتسعير", "type": "Page", "link_to": "settings-pricing"},
+  {"label": "نقل الكفالة", "type": "Page", "link_to": "sponsorship-transfers"},
+  {"label": "الملفات الحكومية للموظفين", "type": "DocType", "link_to": "Employee Government Profile"},
+  {"label": "الطلبات الحكومية", "type": "DocType", "link_to": "Government Request"},
+  {"label": "التقارير", "type": "Report", "link_to": "Outside KSA Leave Workflow Report"}
+ ],
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Government Relations Manager"},
+  {"role": "Government Relations Officer"},
+  {"role": "Finance Clearance Officer"},
+  {"role": "Asset Clearance Officer"},
+  {"role": "HR Government Viewer"}
+ ]
+}

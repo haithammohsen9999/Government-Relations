@@ -1,0 +1,17 @@
+{
+ "doctype": "Page",
+ "name": "settings-pricing",
+ "module": "KSA Government Relations",
+ "page_name": "settings-pricing",
+ "title": "Settings and Pricing",
+ "icon": "octicon octicon-tools",
+ "standard": "Yes",
+ "system_page": 0,
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Government Relations Manager"},
+  {"role": "Government Relations Officer"},
+  {"role": "Finance Clearance Officer"},
+  {"role": "HR Government Viewer"}
+ ]
+}

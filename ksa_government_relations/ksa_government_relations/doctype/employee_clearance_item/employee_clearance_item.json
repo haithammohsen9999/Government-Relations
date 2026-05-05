@@ -1,0 +1,40 @@
+{
+ "doctype": "DocType",
+ "name": "Employee Clearance Item",
+ "module": "KSA Government Relations",
+ "istable": 1,
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "item_type",
+  "reference_doctype",
+  "reference_name",
+  "description",
+  "amount",
+  "mandatory",
+  "allow_travel_with_employee",
+  "status",
+  "waiver_reason",
+  "approved_by",
+  "approval_datetime",
+  "attachment",
+  "comment"
+ ],
+ "fields": [
+  {"fieldname": "department", "fieldtype": "Select", "label": "Department", "options": "Finance\nAssets\nIT\nHR\nGovernment Relations\nOperations\nHousing\nOther", "reqd": 1},
+  {"fieldname": "item_type", "fieldtype": "Select", "label": "Item Type", "options": "Asset\nCustody\nEmployee Advance\nLoan\nExpense Claim\nGovernment Payment\nLeave Encashment\nLeave Deduction\nManual", "reqd": 1},
+  {"fieldname": "reference_doctype", "fieldtype": "Data", "label": "Reference DocType"},
+  {"fieldname": "reference_name", "fieldtype": "Data", "label": "Reference Name"},
+  {"fieldname": "description", "fieldtype": "Small Text", "label": "Description"},
+  {"fieldname": "amount", "fieldtype": "Currency", "label": "Amount"},
+  {"fieldname": "mandatory", "fieldtype": "Check", "label": "Mandatory", "default": "1"},
+  {"fieldname": "allow_travel_with_employee", "fieldtype": "Check", "label": "Can Travel With Employee"},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Pending\nReturned\nPaid\nApproved\nWaived\nApproved to Travel With Employee\nRejected", "default": "Pending"},
+  {"fieldname": "waiver_reason", "fieldtype": "Small Text", "label": "Waiver Reason"},
+  {"fieldname": "approved_by", "fieldtype": "Link", "label": "Approved By", "options": "User"},
+  {"fieldname": "approval_datetime", "fieldtype": "Datetime", "label": "Approval Datetime"},
+  {"fieldname": "attachment", "fieldtype": "Attach", "label": "Attachment"},
+  {"fieldname": "comment", "fieldtype": "Small Text", "label": "Comment"}
+ ]
+}

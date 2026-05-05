@@ -1,0 +1,15 @@
+{
+ "doctype": "Report",
+ "name": "Iqama Expiry Report",
+ "module": "KSA Government Relations",
+ "ref_doctype": "Employee Government Profile",
+ "report_name": "Iqama Expiry Report",
+ "report_type": "Script Report",
+ "is_standard": "Yes",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Government Relations Manager"},
+  {"role": "Government Relations Officer"},
+  {"role": "HR Government Viewer"}
+ ]
+}

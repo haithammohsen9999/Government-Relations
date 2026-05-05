@@ -1,0 +1,1 @@
+from ksa_government_relations.install import after_install
